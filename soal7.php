@@ -8,7 +8,6 @@ echo "Nilai Perbaikan: " . $NilaiPerbaikan;
 echo "<br><br>";
 
 $SimpanNilai = $NilaiAwal;
-$NilaiAwal = $SimpanNilai;
 $NilaiAwal = $NilaiPerbaikan;
 $NilaiPerbaikan = $SimpanNilai;
 

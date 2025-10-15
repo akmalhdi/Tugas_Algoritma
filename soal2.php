@@ -1,8 +1,8 @@
 <?php
 
-$NamaDepan = "Akmal";
+$NamaDepan = "Akmal ";
 $NamaTengah = "Hadi";
-$NamaBelakang = "Rismanto";
+$NamaBelakang = " Rismanto";
 
 echo $NamaDepan . $NamaTengah . $NamaBelakang;
 

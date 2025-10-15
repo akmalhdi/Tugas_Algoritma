@@ -1,9 +1,11 @@
 <?php
 if (isset($_POST['cek'])) {
-    $InputAngka = htmlspecialchars($_POST['angka']);
-    if($InputAngka > 0){
+    $InputAngka = $_POST['angka'];
+    if(!is_numeric($InputAngka)){
+        echo "Harap Masukan Angka";
+    }elseif($InputAngka > 0){
         echo "Angka Positif";
-    }elseif($InputAngka = 0){
+    }elseif($InputAngka == 0){
         echo "Angka 0";
     }else{
         echo "Angka Negatif";
@@ -25,7 +27,7 @@ if (isset($_POST['cek'])) {
     <form action="" method="post">
         <br>
         <label for="angka">Input Angka</label>
-        <input type="number" name="angka" id="angka" required>
+        <input type="text" name="angka" id="angka">
         <button type="submit" name="cek">Cek</button>
     </form>
 </body>

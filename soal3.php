@@ -3,7 +3,7 @@
         $NamaDepan = htmlspecialchars($_POST['depan']);
         $NamaTengah = htmlspecialchars($_POST['tengah']);
         $NamaBelakang = htmlspecialchars($_POST['belakang']);
-        echo $NamaDepan . $NamaTengah . $NamaBelakang;
+        echo $NamaDepan . str_repeat(" ", 2) . $NamaTengah . str_repeat(" ", 2) . $NamaBelakang;
     }
 
 ?>

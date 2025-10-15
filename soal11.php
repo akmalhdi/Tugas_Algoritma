@@ -1,6 +1,6 @@
 <?php
 if (isset($_POST['cek'])) {
-    $InputAngka = htmlspecialchars($_POST['angka']);
+    $InputAngka = $_POST['angka'];
     if ($InputAngka % 2 == 0) {
         echo $InputAngka . " Angka Genap";
     } else{

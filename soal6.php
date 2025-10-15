@@ -1,11 +1,17 @@
+<!-- intval : untuk merubah value inputan menjadi int -->
+<!-- floatval : untuk merubah value inputan menjadi float -->
+<!-- htmlspecialchars : untuk merubah value inputan menjadi html -->
+
+
 <?php
 if (isset($_POST['hitung'])) {
-    $UangSendiri = htmlspecialchars($_POST['sendiri']);
-    $UangTeman = htmlspecialchars($_POST['teman']);
-    $Jumlah = $UangSendiri+$UangTeman;
-    echo "Rp" . number_format($Jumlah);
+    $UangSendiri = floatval($_POST['sendiri']);
+    $UangTeman = floatval($_POST['teman']);
+    $Jumlah = 0;
+    $Jumlah = $UangSendiri + $UangTeman;
+    echo "Jumlah Uang: <br>";
+    echo "Rp" . number_format($Jumlah, 2, ",", ".");
 }
-
 ?>
 
 <!DOCTYPE html>
